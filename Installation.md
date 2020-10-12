@@ -1,3 +1,7 @@
+## Preperation:
+Install [anaconda](https://www.anaconda.com/products/individual "anaconda"). 
+Familiarise with python.
+
 ## Install instructions:
 Clone the project
 ```
@@ -9,7 +13,8 @@ cd chemcomp`
 ```
 Install [conda](https://www.anaconda.com/products/individual "anaconda") environment:
 ```
-conda create -n chemcomp astropy numpy scipy numba matplotlib pyyaml PyTables h5py
+conda create -n chemcomp astropy numpy scipy numba matplotlib pyyaml PyTables h5py  
+conda activate chemcomp
 ```
 Install `chemcomp`:
 ```

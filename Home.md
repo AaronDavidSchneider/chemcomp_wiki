@@ -22,4 +22,4 @@ Included planet physics:
 - Gas accretion ([Machida et al. 2010](https://ui.adsabs.harvard.edu/abs/2010MNRAS.405.1227M/abstract), [Bitsch et al. 2015](https://ui.adsabs.harvard.edu/abs/2015A%26A...582A.112B/abstract), [Bergez-Casalou et al. 2020](https://ui.adsabs.harvard.edu/abs/2020arXiv201000485B/abstract))
 
 
-The physical model is in depth explained in Schneider & Bitsch (2020). This wiki is only meant for explainations on the structure of `chemcomp`
+The physical model is in depth explained in Schneider & Bitsch (2020). This wiki is only meant for explainations on the structure of `chemcomp`.
