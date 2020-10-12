@@ -1,4 +1,5 @@
-{% include image.html img="images/images/operating_principle.png" title="Operating principle" caption="Operating principle of `chemcomp`. The main loop is shown in blue. Black arrows connect individual steps (beige nodes) that are performed in each time step. Red arrows indicate initialisation steps." %}
+{% include image.html url="images/operating_principle.png" description="Operating principle of chemcomp. The main loop is shown in blue. Black arrows connect individual steps (beige nodes) that are performed in each time step. Red arrows indicate initialisation steps." %}
+
 
  `chemcomp` provides a platform to simulate the above described physics. It includes a disk module (attributes are defined on a log-radial grid, can be changed in config file) that deals with the formation of pebbles and planetesimals as well as the dynamics of gas and pebbles. It calculates the temperature of the disk and the temperature dependent compositions of gas, pebbles and planetesimals by also including effects induced by the existance of evaporation lines.
 
