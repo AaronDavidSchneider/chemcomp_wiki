@@ -4,8 +4,9 @@
 [Installation](https://github.com/AaronDavidSchneider/chemcomp/wiki/Installation)
 
 **Structure**  
-[Object structure](https://github.com/AaronDavidSchneider/chemcomp/wiki/Object-structure)  
-[File structure](https://github.com/AaronDavidSchneider/chemcomp/wiki/File-structure)  
+[Operating Principle](https://github.com/AaronDavidSchneider/chemcomp/wiki/Operating-Principle)  
+[Object Structure](https://github.com/AaronDavidSchneider/chemcomp/wiki/Object-Structure)  
+[File Structure](https://github.com/AaronDavidSchneider/chemcomp/wiki/File-Structure)  
 [Output](https://github.com/AaronDavidSchneider/chemcomp/wiki/Output)  
 
 **Various**  
