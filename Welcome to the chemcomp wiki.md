@@ -1,5 +1,3 @@
-# Welcome to the chemcomp wiki!
-
 ## Install instructions:
 Clone the project
 ```
