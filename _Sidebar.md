@@ -1,14 +1,11 @@
-[Home](https://github.com/AaronDavidSchneider/chemcomp/wiki/Home)
+[Home](https://github.com/AaronDavidSchneider/chemcomp/wiki/Home)  
 
-**Before you start**
-
+**Before you start**  
 [Installation](https://github.com/AaronDavidSchneider/chemcomp/wiki/Installation)
 
-**Structure**
+**Structure**  
 TBD
 
-**Various**
-
-[FAQ](https://github.com/AaronDavidSchneider/chemcomp/wiki/FAQ)
-
+**Various**  
+[FAQ](https://github.com/AaronDavidSchneider/chemcomp/wiki/FAQ)  
 Link to paper I
