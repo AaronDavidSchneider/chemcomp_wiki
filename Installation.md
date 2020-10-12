@@ -16,5 +16,3 @@ Install `chemcomp`:
 pip install -e .
 ````
 Adjust paths in `chemcomp/helper/main_helper` if you need different directories for output and config
-
-
