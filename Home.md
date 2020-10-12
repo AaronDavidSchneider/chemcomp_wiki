@@ -1,3 +1,5 @@
+![Dreieck](images/dreieck.png)
+
 # Welcome to the chemcomp wiki
 
 *Modeling the chemical composition of gas giants by accretion of pebbles, planetesimals and gas.*
@@ -21,5 +23,8 @@ Included planet physics:
 - Planetesimal Accretion [(Johansen & Bitsch 2019)](https://ui.adsabs.harvard.edu/abs/2019A%26A...631A..70J/abstract)
 - Gas accretion ([Machida et al. 2010](https://ui.adsabs.harvard.edu/abs/2010MNRAS.405.1227M/abstract), [Bitsch et al. 2015](https://ui.adsabs.harvard.edu/abs/2015A%26A...582A.112B/abstract), [Bergez-Casalou et al. 2020](https://ui.adsabs.harvard.edu/abs/2020arXiv201000485B/abstract))
 
+![0](images/background_0.png)
+![1](images/background_1.png)
+![2](images/background_2.png)
 
 The physical model is in depth explained in Schneider & Bitsch (2020). This wiki is only meant for explainations on the structure of `chemcomp`.
