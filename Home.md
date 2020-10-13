@@ -23,8 +23,14 @@ Included planet physics:
 - Planetesimal Accretion [(Johansen & Bitsch 2019)](https://ui.adsabs.harvard.edu/abs/2019A%26A...631A..70J/abstract)
 - Gas accretion ([Machida et al. 2010](https://ui.adsabs.harvard.edu/abs/2010MNRAS.405.1227M/abstract), [Bitsch et al. 2015](https://ui.adsabs.harvard.edu/abs/2015A%26A...582A.112B/abstract), [Bergez-Casalou et al. 2020](https://ui.adsabs.harvard.edu/abs/2020arXiv201000485B/abstract))
 
-![0](images/background_0.png)
-![1](images/background_1.png)
-![2](images/background_2.png)
 
-The physical model is in depth explained in Schneider & Bitsch (2020). This wiki is only meant for explainations on the structure of `chemcomp`.
+| ![0](images/background_0.png) |
+| *Phase 1: Dust particles grow to pebbles (small dots) and drift towards the star while forming planetesimals (large dots). Icy pebbles that cross the water ice line (dashed line) evaporate their water content and enrich the gas with water vapour. Water vapour that crosses the ice line condenses onto pebbles increasing their water content.* |
+| ![1](images/background_1.png) |
+| *Phase 2: The core of the planet is formed by pebble and planetesimal accretion while the planet migrates. Depending on the formation path, the core composition can be icy or dry.* |
+| ![2](images/background_2.png) |
+| *Phase 3: Once the planet is heavy enough to reach pebble isolation and form a pressure bump, pebbles are stoped and can not be accreted by the planet. The planet will then accrete water rich gas while still accreting planetesimals that ablate in the atmosphere of the planet.* |
+|:--:| 
+| *Phases of planetary growth. The water content of the disk (in solid or gaseous form) is color coded, where a darker color indicates a larger water content. We restrict ourselves in this cartoon to the water evaporation front, but the same applies for the evaporation of all solids in our model.* |
+
+The physical model is in depth explained in Schneider & Bitsch (2020). This wiki is only meant for explanations on the structure of `chemcomp`.
