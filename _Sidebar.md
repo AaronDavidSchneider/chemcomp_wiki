@@ -1,14 +1,21 @@
-[Home](https://github.com/AaronDavidSchneider/chemcomp/wiki/Home)  
+[Home](Home)  
 
 **Before you start**  
-[Installation](https://github.com/AaronDavidSchneider/chemcomp/wiki/Installation)
+- [Installation](Installation)
 
 **Structure**  
-[Operating Principle](https://github.com/AaronDavidSchneider/chemcomp/wiki/Operating-Principle)  
-[Object Structure](https://github.com/AaronDavidSchneider/chemcomp/wiki/Object-Structure)  
-[File Structure](https://github.com/AaronDavidSchneider/chemcomp/wiki/File-Structure)  
-[Output](https://github.com/AaronDavidSchneider/chemcomp/wiki/Output)  
+- [Operating Principle](Operating-Principle) 
+- [File Structure](File-Structure)  
+  - [Config File](Config-File)    
+  - [Config File](Job-File) 
+- [Object Structure](Object-Structure) 
+  - [Disk Module](Disk-Module)  
+  - [Planet Module](Planet-Module)  
+  - [Chemistry Module](Chemistry-Module)  
+  - [Accretion Module](Accretion-Module)      
+- [Output](Output)  
+
 
 **Various**  
-[FAQ](https://github.com/AaronDavidSchneider/chemcomp/wiki/FAQ)  
-Link to paper I
+- [FAQ](FAQ)  
+- Link to paper I
