@@ -26,7 +26,7 @@ python main.py [-h/--help][-c/--config_file]
 `-c` specifies the path to the config file.  
 `-h` shows the help dialog.
 
-Parameters that are set in the config file can be found [here](Config-File.md).  
+Parameters that are set in the config file can be found [here](Config-File).  
 
 #### pipeline.py
 Wrapper for running a multiple configurations. Execute with:
@@ -38,8 +38,8 @@ python pipeline.py [-h/--help][-c/--config_file][-d/--delete][-j/--job_file]
 `-d` specifies wether to delete (use `-d 1`) or not delete (use `-d 0`) the files in `output` after zipping.    
 `-j` specifies the path to the job file.  
 
-Explanations about the config file can be found [here](Config-File.md).       
-Explanations of the job file can be found [here](Job-File.md).  
+Explanations about the config file can be found [here](Config-File).       
+Explanations of the job file can be found [here](Job-File).  
 
 #### submit.sh
 Shell wrapper for `pipeline.py` for running on a `slurm` cluster (like `bachelor` from the MPIA). Execute with same arguments like `pipeline.py`. Execute on cluster with:
@@ -109,10 +109,10 @@ The code is structured in four main modules:
 
 | Module | directory of parent class | Used for |  
 |:---:|:---:|:---:|   
-| [`Disk`](Disk-Module.md) | `_disk_class` | Deals with the disk related physics (e.g. dust growth, visc evolution, etc.) |
-| [`Chemistry`](Chemistry-Module.md) | `_chemistry_new`/`_chemistry` | Chemical compositions used in `Disk`.|
-| [`Planet`](Planet-Module.md) | `_planet_class` | Controls the other modules. Grows and migrates. |
-| [`Accretion`](Accretion-Module.md)| `_accretion_class` | Used in `Planet`. Calculates the accretion rates. |
+| [`Disk`](Disk-Module) | `_disk_class` | Deals with the disk related physics (e.g. dust growth, visc evolution, etc.) |
+| [`Chemistry`](Chemistry-Module) | `_chemistry_new`/`_chemistry` | Chemical compositions used in `Disk`.|
+| [`Planet`](Planet-Module) | `_planet_class` | Controls the other modules. Grows and migrates. |
+| [`Accretion`](Accretion-Module)| `_accretion_class` | Used in `Planet`. Calculates the accretion rates. |
 
 
 ## Other directories
@@ -126,8 +126,8 @@ The paths for `output`,`zip_output`,`config` and `jobs` can be adjusted in `chem
 | `jobs` | `JOB_PATH` | path in which job configurations are stored |  
 | `config` | `CONFIG_PATH` | path in which configuration/parameter files are stored |  
 
-The complete set of parameters in the config file is explained [here](Config-File.md).       
-Explanations of the job file can be found [here](Job-File.md). 
+The complete set of parameters in the config file is explained [here](Config-File).       
+Explanations of the job file can be found [here](Job-File). 
 
 
 
