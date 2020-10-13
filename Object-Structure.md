@@ -1,7 +1,8 @@
 `chemcomp` uses object oriented programming.  
 It is vital that you familiarise with OOP in python. Otherwise you will not understand how `chemcomp` works.
 
-### Small python Test:
+## Small python Test:
+I recommend doing this small python test that helps to understand objects in python.
 <details><summary>Unveil the Test</summary>
 <p>
 
@@ -56,5 +57,19 @@ Objects are passed as reference!
 </details>
 </p>
 </details>
-</br>
+
+## Design of `chemcomp`:
+`chemcomp` uses modules (objects) that are initialised at the beginning of the simulations. Those objects are then constantly updated during the time evolution. Variables pointing to other objects are always up-to-date, since python passes objects by reference (see above code example).
+
+### [Disk (click here)](Disk-Module)
+The Disk module has all the physics of the protoplanetary disk included. It is possible to create your own disk (for examples of disks see `chemcomp/disks` folder). 
+
+### [Planet (click here)](Planet-Module)
+Supervisor module that handles the growth of the planet (see `grow_mass()`) and updates all other modules. It is possible to overwrite methods (for examples of planets see `chemcomp/planets` folder). The most advanced planet is certainly `BertPlanet`, since it uses all kinds of migration techniques.
+
+### [Chemistry (click here)](Chemistry-Module)
+Supplies the chemical model used in `chemcomp`. 
+
+### [Accretion (click here)](Accretion-Module)
+Used in the flavours of pebble, planetesimal and gas accretion. Calculates the accretion rates.
 
