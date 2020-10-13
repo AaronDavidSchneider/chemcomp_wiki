@@ -63,12 +63,12 @@ The `chemcomp/chemcomp` directory is the directory where the main code resides.
 
 The paths for `output`,`zip_output`,`config` and `jobs` can be adjusted in `chemcomp/chemcomp/helpers/__init__.py`
 
-| Path | Variable | Use of path |
-| :--- | :--- | :--- |
-| `output` | `OUTPUT_PATH` | storage path for the output files |
-| `zip_output` | `ZIP_OUTPUT_PATH` | storage path for the zipped output files |
-| `jobs` | `JOB_PATH` | path in which job configurations are stored |
-| `config` | `CONFIG_PATH` | path in which configuration/parameter files are stored |
+| Path | Variable | Use of path |  
+|:--- |:--- |:--- |  
+| `output` | `OUTPUT_PATH` | storage path for the output files |  
+| `zip_output` | `ZIP_OUTPUT_PATH` | storage path for the zipped output files |  
+| `jobs` | `JOB_PATH` | path in which job configurations are stored |  
+| `config` | `CONFIG_PATH` | path in which configuration/parameter files are stored |  
 
 The complete set of parameters in the config file is explained [here](Config-File).       
 Explanations of the job file can be found [here](Job-File). 
