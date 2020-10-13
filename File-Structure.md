@@ -63,10 +63,10 @@ chemcomp/chemcomp
 ├── __init__.py
 ├── accretion_models
 │   ├── __init__.py
-│   ├── _accretion_class.py    # framework for accretion models
-│   ├── gas.py                 # gas accretion model
-│   ├── pebbles.py             # pebble accretion model
-│   └── planetesimals.py       # planetesimal accretion model
+│   ├── _accretion_class.py     # framework for accretion models
+│   ├── gas.py                  # gas accretion model
+│   ├── pebbles.py              # pebble accretion model
+│   └── planetesimals.py        # planetesimal accretion model
 ├── disks
 │   ├── _0pacity
 │   │   ├── __init__.py
