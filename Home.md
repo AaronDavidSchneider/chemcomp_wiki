@@ -1,4 +1,6 @@
-![Dreieck](images/dreieck.png)
+|![Dreieck](images/dreieck.png)|
+|:---:|
+|*Planets disaggregated into the origin of their heavy element content. The edges of the Triangle can be related to 100% of the heavy element content originating from pebble accretion (right corner), planetesimal accretion (upper corner) or gas accretion of heavy elements (left corner). The left panel includes simulations where evaporation and condensation at the evaporation lines is not taken into account. The right panel takes this into account. The final planetary mass is color coded.*|
 
 # Welcome to the chemcomp wiki
 
