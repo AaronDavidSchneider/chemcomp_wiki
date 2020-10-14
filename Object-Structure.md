@@ -61,6 +61,8 @@ Objects are passed as reference!
 ## Design of `chemcomp`:
 `chemcomp` uses modules (objects) that are initialised at the beginning of the simulations. Those objects are then constantly updated during the time evolution. Variables pointing to other objects are always up-to-date, since python passes objects by reference (see above code example).
 
+It is highly recommended to use numpy masking if possible. Loops should be avoided at any cost! Python is very slow when it comes to loops but very efficient if it uses numpy vectoring.
+
 ### [Disk (click here)](Disk-Module)
 The Disk module has all the physics of the protoplanetary disk included. It is possible to create your own disk (for examples of disks see `chemcomp/disks` folder). 
 
