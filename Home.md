@@ -1,10 +1,32 @@
+# Welcome to the chemcomp wiki
 |![Dreieck](images/dreieck.png)|
 |:---:|
 |*Planets disaggregated into the origin of their heavy element content. The edges of the Triangle can be related to 100% of the heavy element content originating from pebble accretion (right corner), planetesimal accretion (upper corner) or gas accretion of heavy elements (left corner). The left panel includes simulations where evaporation and condensation at the evaporation lines is not taken into account. The right panel takes this into account. The final planetary mass is color coded.*|
 
-# Welcome to the chemcomp wiki
+## Table of contents
+[Home](Home)  
 
-@@include[Sidebar](_Sidebar.md)
+**Before you start:**  
+- [Installation](Installation)
+
+**Structure:**  
+- [Operating Principle](Operating-Principle) 
+- [File Structure](File-Structure)  
+  - [Config File](Config-File)    
+  - [Job File](Job-File) 
+- [Object Structure](Object-Structure) 
+  - [Disk Module](Disk-Module)  
+  - [Planet Module](Planet-Module)  
+  - [Chemistry Module](Chemistry-Module)  
+  - [Accretion Module](Accretion-Module)      
+- [Output](Output)  
+
+
+**Various:**  
+- [FAQ](FAQ)  
+- Link to paper I
+
+## About
 
 *Modeling the chemical composition of gas giants by accretion of pebbles, planetesimals and gas.*
 
