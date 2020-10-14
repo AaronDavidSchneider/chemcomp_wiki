@@ -4,6 +4,8 @@
 
 # Welcome to the chemcomp wiki
 
+@@include[Sidebar](_Sidebar.md)
+
 *Modeling the chemical composition of gas giants by accretion of pebbles, planetesimals and gas.*
 
 `chemcomp` is a python code that aims to enable the study the formation of planets in 1D protoplanetary disks. 
