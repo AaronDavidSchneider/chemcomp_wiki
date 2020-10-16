@@ -24,6 +24,7 @@ par_5:
   section: config_planet
 output_name: thorngren
 four_disks: True
+save_interval: 5e10  # only save at the end when planet has formed (if you have a disk life time of less than 5e6 years)
 
 ```
 This example runs 1200 simulations (4x4x3x5x5) for every of the four cases of SB20 (plain, pla, evap, evap & pla).
@@ -46,4 +47,7 @@ Use either `vals` if you want to give the values explicitly or `arange` for use 
 |:---:|:---:|
 |`four_disks`| `True` if you want to simulate the four cases of SB20 (plain, evap, pla, evap & pla) or `False` if you don't (e.g. only your config is used). |
 |`save_disk` | `True` if you want to additionally save disk quantities else `False` |
+|`save_interval` | set time in years for the interval of the output |
 |`output_name` | Name of the output files (important!!!)  |
+
+I can only recommend using `save_interval` for large runs! E.g. if you are only interested in the final state of the formed planets you can set `set_interval` arbitrary high (e.g. `5e10`) and the code will only save the final state.

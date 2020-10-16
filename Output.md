@@ -20,9 +20,9 @@ Browse through the content using:
 import h5py
 file = "yourfilename.h5"
 with h5py.File(file, "r") as f:
-  print(dict(f["planet"].keys())
-  print(dict(f["acc"].keys())
-  print(dict(f["disk"].keys())
+  print(dict(f["planet"].keys()))
+  print(dict(f["acc"].keys()))
+  print(dict(f["disk"].keys()))
 ```
 
 Units for planets can be retrieved by
