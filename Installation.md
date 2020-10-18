@@ -11,7 +11,7 @@ move into directory:
 ```
 cd chemcomp`
 ```
-Install [conda](https://www.anaconda.com/products/individual "anaconda") environment:
+Install [conda](https://www.anaconda.com/products/individual "anaconda") virtual environment:
 ```
 conda create -n chemcomp astropy numpy scipy numba matplotlib pyyaml PyTables h5py  
 conda activate chemcomp
