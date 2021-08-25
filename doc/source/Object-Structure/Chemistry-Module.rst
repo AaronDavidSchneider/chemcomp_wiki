@@ -23,24 +23,29 @@ This is best explained in the function ``calc_composition()``.
 
 Important Functions
 """""""""""""""""""
-*calc_composition()*
+* **calc_composition()**
+
 takes molecular mass fractions and enumerates the mass fractions of elements based on their molecular composition.
 
-*get_composition()*
+* **get_composition()**
+
 wrapper for the calculation of the static disk chemistry.
 
-*get_gas_composition()*
+* **get_gas_composition()**
+
 wrapper for the calculation of the dynamic gas disk composition based on the molecular composition.
 
-*get_solid_composition()*
+* **get_solid_composition()**
+
 wrapper for the calculation of the dynamic solid disk composition based on the molecular composition.
 
-*abundances()*
+* **abundances()**
+
 calculates the mass fractions for the static composition.
 
-*get_position_of_ice()*
-calculates the position of icelines.
+* **get_position_of_ice()**
 
+calculates the position of icelines.
 
 
 important attributes

@@ -8,8 +8,6 @@ Small python Test:
 """"""""""""""""""
 
 I recommend doing this small python test that helps to understand objects in python.
-<details><summary>Unveil the Test</summary>
-<p>
 
 .. code-block :: python
 
@@ -46,9 +44,6 @@ I recommend doing this small python test that helps to understand objects in pyt
 
 Do you know what it returns? 
 
-<details><summary>Solution</summary>
-<p>
-
 .. code-block :: bash
 
    1: 1 1 1 1
@@ -58,11 +53,6 @@ Do you know what it returns?
 
 
 Objects are passed as reference!
-
-</p>
-</details>
-</p>
-</details>
 
 Design of ``chemcomp``
 """"""""""""""""""""""
