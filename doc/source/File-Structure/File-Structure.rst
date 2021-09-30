@@ -20,6 +20,13 @@ Overview of files
 
 Including the files ``main.py`` and ``pipeline.py`` and ``submit.sh``
 
+.. toctree::
+   :maxdepth: 1
+   :caption: Run configuration:
+
+   Config-File
+   Job-File
+
 main.py
 ^^^^^^^
 
@@ -42,9 +49,10 @@ Wrapper for running a multiple configurations. Execute with:
 
 .. code-block :: bash
 
-   python pipeline.py [-h/--help][-c/--config_file][-d/--delete][-j/--job_file]
+   python pipeline.py [-h/--help][-c/--config_file][-d/--delete][-j/--job_file][-o/overwrite]
 
 * ``-c`` specifies the path to the config file.
+* ``-o`` specifies if you want to overwrite existing simulations.
 * ``-h`` shows the help dialog.
 * ``-d`` specifies wether to delete (use ``-d 1``) or not delete (use ``-d 0``) the files in ``output`` after zipping.
 * ``-j`` specifies the path to the job file.
@@ -59,7 +67,7 @@ Shell wrapper for ``pipeline.py`` for running on a ``slurm`` cluster (like ``bac
 
 .. code-block :: bash
 
-   sbatch submit.sh [-c][-j]
+   sbatch submit.sh [-c][-j][-d][-o]
 
 submit_MA.sh, submit_paper1.sh, submit_paper2.sh
 """"""""""""""""""""""""""""""""""""""""""""""""

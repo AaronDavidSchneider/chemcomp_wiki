@@ -42,11 +42,14 @@ Units for planets can be retrieved by
    with h5py.File(file, "r") as f:
      units = dict(f["planet"]["units"].attrs)
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Plotting Tutorial:
 
-Examples
-""""""""
+   notebooks/basic_plotting/basic_plotting
 
-* See `import_data()` in `chemcomp/chemcomp/helper/analysis_helper` for an example of how to load planet data
-* See `chemcomp/analysis/paper_1/disk.py` for an example of how to load disk data
 
-.. note :: Mention the GrowthPlot Class!
+Further Examples
+""""""""""""""""
+   * See `import_data()` in `chemcomp/chemcomp/helper/analysis_helper` for an example of how to load planet data
+   * See `chemcomp/analysis/paper_1/disk.py` for an example of how to load disk data

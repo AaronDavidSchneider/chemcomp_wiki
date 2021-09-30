@@ -28,7 +28,7 @@ Job files can be used for grid simulations where all parameters that are searche
    four_disks: True
    save_interval: 5e10  # only save at the end when planet has formed (if you have a disk life time of less than 5e6 years)
 
-This example runs 1200 simulations (4x4x3x5x5) for every of the four cases of SB20 (plain, pla, evap, evap & pla).
+This example runs 1200 simulations (4x4x3x5x5) for every of the four cases of SB21 (plain, pla, evap, evap & pla).
 
 Explanation
 """""""""""
@@ -51,16 +51,16 @@ Use either ``vals`` if you want to give the values explicitly or ``arange`` for 
 
 **Usage of other values:**
 
-+------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
-| Parameter        | Usage                                                                                                                                              |
-+==================+====================================================================================================================================================+
-|``four_disks``    | ``True`` if you want to simulate the four cases of SB20 (plain, evap, pla, evap & pla) or ``False`` if you don't (e.g. only your config is used).  |
-+------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
-|``save_disk``     | ``True`` if you want to additionally save disk quantities else ``False``                                                                           |
-+------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
-|``save_interval`` | set time in years for the interval of the output                                                                                                   |
-+------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
-|``output_name``   | Name of the output files (important!!!)                                                                                                            |
-+------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
++------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Parameter        | Usage                                                                                                                                                             |
++==================+===================================================================================================================================================================+
+|``four_disks``    | ``True`` if you want to simulate the two cases of SB21 (plain, evap) or ``False`` if you don't (e.g. only your config is used). Naming sounds counterintuitive... |
++------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|``save_disk``     | ``True`` if you want to additionally save disk quantities else ``False``                                                                                          |
++------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|``save_interval`` | set time in years for the interval of the output                                                                                                                  |
++------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|``output_name``   | Name of the output files (important!!!)                                                                                                                           |
++------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 I can only recommend using ``save_interval`` for large runs! E.g. if you are only interested in the final state of the formed planets you can set ``set_interval`` arbitrary high (e.g. ``5e10``) and the code will only save the final state.

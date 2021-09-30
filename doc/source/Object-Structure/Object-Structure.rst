@@ -4,6 +4,16 @@ Object Structure
 ``chemcomp`` uses object oriented programming.
 It is vital that you familiarise with OOP in python. Otherwise you will not understand how ``chemcomp`` works.
 
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Modules:
+
+   Planet-Module
+   Disk-Module
+   Chemistry-Module
+   Accretion-Module
+
 Small python Test:
 """"""""""""""""""
 
@@ -42,7 +52,7 @@ I recommend doing this small python test that helps to understand objects in pyt
    c.update_obj(1)
    print("4:",b.x)
 
-Do you know what it returns? 
+Do you know what it returns?
 
 .. code-block :: bash
 
@@ -76,4 +86,3 @@ Supplies the chemical model used in ``chemcomp``.
 * :ref:`Accretion Module`
 
 Used in the flavours of pebble, planetesimal and gas accretion. Calculates the accretion rates.
-

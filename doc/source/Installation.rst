@@ -9,7 +9,7 @@ Clone the project
 
 .. code-block:: bash
 
-   git clone git@github.com:AaronDavidSchneider/chemcomp.git
+   git clone git@github.com:chemcomppla/chemcomp.git
 
 move into directory:
 
