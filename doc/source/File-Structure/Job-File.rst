@@ -1,6 +1,8 @@
 Job.yaml
 ^^^^^^^^
 Job files can be used for grid simulations where all parameters that are searched on are combined with each other.
+The idea is that you have several par_{i} sections in the job.yaml that each overwrite one config parameter.
+We use np.meshgrid under the hood to combine all possible parameters.
 
 .. code-block :: yaml
 
@@ -26,9 +28,9 @@ Job files can be used for grid simulations where all parameters that are searche
      section: config_planet
    output_name: thorngren
    four_disks: True
-   save_interval: 5e10  # only save at the end when planet has formed (if you have a disk life time of less than 5e6 years)
+   save_interval: 5e10  # only output at the end when planet has already formed
 
-This example runs 1200 simulations (4x4x3x5x5) for every of the four cases of SB21 (plain, pla, evap, evap & pla).
+This example runs 1200 simulations (4x4x3x5x5) for every of the two cases of SB21 (plain, evap).
 
 Explanation
 """""""""""
