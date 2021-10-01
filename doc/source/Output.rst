@@ -17,6 +17,11 @@ Every run creates a ``.h5`` file with the following structure:
        ├── [quantities]
 
 
+The ``print_params()`` inside the Planet class is the function that deals with IO operations. This function is called in the mainloop (``grow_mass()``).
+
+The ``print_params()`` function calls the save function of the ``DataObject`` that belongs to the ``Planet``. All the saving arithmetics (how often we want outputs, etc.) are handled therein.
+
+It is important to understand that the ``DataObject`` object owns a reference to the ``Planet`` (and therefore also to the ``Disk`` object and the accretion objects). The save function of the ``DataObject`` has therefore full access (at all times) to the current disk and planet quantities.
 
 Get familiar with the output
 """"""""""""""""""""""""""""
