@@ -26,11 +26,8 @@ Install `conda <https://www.anaconda.com/products/individual>`_. virtual environ
    conda activate chemcomp
 
 
-Install `chemcomp`:
+Install ``chemcomp``:
 
 .. code-block:: bash
 
    pip install -e .
-
-
-Adjust paths in `chemcomp/helper/main_helper` if you need different directories for output and config

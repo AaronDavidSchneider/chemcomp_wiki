@@ -56,6 +56,7 @@ The physical model is in depth explained in `(Schneider & Bitsch 2021a) <https:/
    :caption: Contents
 
    Installation
+   Usage
    Operating-Principle
    File-Structure/File-Structure
    Object-Structure/Object-Structure

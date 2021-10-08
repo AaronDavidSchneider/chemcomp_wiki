@@ -27,14 +27,14 @@ Including the files ``main.py`` and ``pipeline.py`` and ``submit.sh``
    Config-File
    Job-File
 
-main.py
-^^^^^^^
+chemcomp_main
+^^^^^^^^^^^^^
 
 Wrapper for running a single configuration. Execute with:
 
 .. code-block :: bash
 
-   python main.py [-h/--help][-c/--config_file]
+   chemcomp_main [-h/--help][-c/--config_file]
 
 
 * ``-c`` specifies the path to the config file.
@@ -42,14 +42,14 @@ Wrapper for running a single configuration. Execute with:
 
 Parameters that are set in the config file can be found [here](Config-File).
 
-pipeline.py
-^^^^^^^^^^^
+chemcomp_pipeline
+^^^^^^^^^^^^^^^^^
 
 Wrapper for running a multiple configurations. Execute with:
 
 .. code-block :: bash
 
-   python pipeline.py [-h/--help][-c/--config_file][-d/--delete][-j/--job_file][-o/overwrite]
+   chemcomp_pipeline [-h/--help][-c/--config_file][-d/--delete][-j/--job_file][-o/overwrite]
 
 * ``-c`` specifies the path to the config file.
 * ``-o`` specifies if you want to overwrite existing simulations.
@@ -63,7 +63,7 @@ Explanations of the job file can be found [here](Job-File).
 submit.sh
 ^^^^^^^^^
 
-Shell wrapper for ``pipeline.py`` for running on a ``slurm`` cluster (like ``bachelor`` from the MPIA). Execute with same arguments like ``pipeline.py``. Execute on cluster with:
+Shell wrapper for ``chemcomp_pipeline`` for running on a ``slurm`` cluster (like ``bachelor`` from the MPIA). Execute with same arguments like ``chemcomp_pipeline``. Execute on cluster with:
 
 .. code-block :: bash
 
