@@ -28,17 +28,17 @@ Get familiar with the output
 
 ``.h5`` files are self documented files!
 
-Browse through the content using:
-
-.. code-block :: python
-
-   import h5py
-   file = "yourfilename.h5"
-   with h5py.File(file, "r") as f:
-     print(dict(f["planet"].keys()))
-     print(dict(f["acc"].keys()))
-     print(dict(f["disk"].keys()))
-
+#Browse through the content using:
+#
+#.. code-block :: python
+#
+#   import h5py
+#   file = "yourfilename.h5"
+#   with h5py.File(file, "r") as f:
+#       print(dict(f["planet"].keys()))
+#       print(dict(f["acc"].keys()))
+#       print(dict(f["disk"].keys()))
+#
 
 Units for planets can be retrieved by
 

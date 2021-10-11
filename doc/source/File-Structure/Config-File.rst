@@ -77,7 +77,7 @@ In case of doubt check the ``__init__()`` methods of the respective classes!
   # Take care of units here! Otherwise adapt in import_config.scale_units!
   # Physical parameters
   config_disk:
-  model:                        DiskLabDisk    # Set the name of the Disk model that you want to use. This Disk model should be imported in the ``__init__.py` in the disk directory!
+    model:                        DiskLabDisk    # Set the name of the Disk model that you want to use. This Disk model should be imported in the ``__init__.py` in the disk directory!
     M_STAR:                       1.0        # mass of central star in sun masses
     ALPHA:                        5.0e-4     # Alpha viscosity
     ALPHAHEIGHT:                  1.0e-4     # alpha_z vertical stirring parameter
@@ -144,6 +144,7 @@ In case of doubt check the ``__init__()`` methods of the respective classes!
     DEF_R_OUT:                    1000     # outer r boundary (in AU)
     DEF_GRIDSIZE:                 500      # radial gridsize
     DEF_LIN_SPACING:              False    # Spacing of radial grid
+    DEF_TIMESTEP:                 10       # custom timestep in years (use 10 years to be safe)
 
   output:
     name:                        Bert     # name of output file. Will be overwritten if you use a job.yaml
