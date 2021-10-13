@@ -121,7 +121,7 @@ In case of doubt check the ``__init__()`` methods of the respective classes!
 
   config_pebble_accretion:
     #STOKES:                       0.01     # static Stokes Number, only use with caution, only use in combination with disk config static_stokes
-    u_frag:                       5.0       # fragmentation velocity in m/s
+    u_frag:                       5.0       # fragmentation velocity in m/s. If you dont set it the code will use the Drazkowska2017 fragmentation velocity of 1 m/s for dry and 10 m/s for icy pebbles
     epsilon_p:                    0.5       # sticking efficiency
     #H_p_over_H:                   0.1      # static pebble scale hight. Not used by default
     #twoD:                         True     # Not used by default
@@ -136,7 +136,8 @@ In case of doubt check the ``__init__()`` methods of the respective classes!
     R_pla:                        50      # Planetesimal radius in km
     rho_pla:                      1       # density of a single planetesimal (g/cm^3) = 1000 kg/m^3
     stirring:                     1.0e-4  # planetesimal
-    efficiency:                   0.00    # Outdated, should be 0 to ensure 0 planetesimal accretion
+    efficiency:                   0.00    # Set the efficiency of planetesimal formation
+    pla_method:                   MPIA    # can be 'MPIA' or 'Drazkowska' in order to use the formation prescription of Lenz2019 or Drazkowska2017
 
   # modelling parameters
   defaults:
