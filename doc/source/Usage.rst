@@ -26,7 +26,10 @@ Configure your run and get it running.
    chemcomp_main -c <path to config file>
 
    # probing multiple parameters:
-   chemcomp_pipeline -c <path to config file> -j <path to job file> -d 0 -o 1
+   chemcomp_pipeline -c <path to config file> -j <path to job file> -d 0 -o 0
+
+   # probing multiple parameters with slurm:
+   chemcomp_pipeline_slurm -c <path to config file> -j <path to job file> -d 0 -o 0 -s <slurm file>
 
 Head over to see  :ref:`Overview of files` to understand the run scripts!
 

@@ -18,7 +18,10 @@ Overview of files
    └── zip_output            # ziped output files
 
 
-Including the files ``main.py`` and ``pipeline.py`` and ``submit.sh``
+There are several ways how you can use ``chemcomp``.
+Upon installation of ``chemcomp``, several scripts are added to your python environment.
+We will discuss these in more detail below.
+
 
 .. toctree::
    :maxdepth: 1
@@ -26,6 +29,8 @@ Including the files ``main.py`` and ``pipeline.py`` and ``submit.sh``
 
    Config-File
    Job-File
+   Slurm-File
+
 
 chemcomp_main
 ^^^^^^^^^^^^^
@@ -40,43 +45,41 @@ Wrapper for running a single configuration. Execute with:
 * ``-c`` specifies the path to the config file.
 * ``-h`` shows the help dialog.
 
-Parameters that are set in the config file can be found [here](Config-File).
+Parameters that are set in the config file can be found :ref:`here <config.yaml>`.
 
 chemcomp_pipeline
 ^^^^^^^^^^^^^^^^^
 
-Wrapper for running a multiple configurations. Execute with:
+Wrapper for running multiple configurations. Uses ``dask-jobqueue``. Execute with:
 
 .. code-block :: bash
 
    chemcomp_pipeline [-h/--help][-c/--config_file][-d/--delete][-j/--job_file][-o/overwrite]
 
 * ``-c`` specifies the path to the config file.
-* ``-o`` specifies if you want to overwrite existing simulations.
+* ``-o`` specifies if you want to overwrite existing simulations. Use ``-o 1`` if you want to overwrite all your already finished runs.
 * ``-h`` shows the help dialog.
 * ``-d`` specifies wether to delete (use ``-d 1``) or not delete (use ``-d 0``) the files in ``output`` after zipping.
 * ``-j`` specifies the path to the job file.
 
-Explanations about the config file can be found [here](Config-File).
-Explanations of the job file can be found [here](Job-File).
+Explanations about the config file can be found :ref:`here <config.yaml>`.
+Explanations of the job file can be found :ref:`here <job.yaml>`.
 
-submit.sh
-^^^^^^^^^
+:Note: Your execution did not finish? Don't worry. You can continue your runs with ``-o 0``, which will only runs on those parameters again, that did not yet finish.
 
-Shell wrapper for ``chemcomp_pipeline`` for running on a ``slurm`` cluster (like ``bachelor`` from the MPIA). Execute with same arguments like ``chemcomp_pipeline``. Execute on cluster with:
+chemcomp_pipeline_slurm
+^^^^^^^^^^^^^^^^^^^^^^^
 
-.. code-block :: bash
-
-   sbatch submit.sh [-c][-j][-d][-o]
-
-submit_MA.sh, submit_paper1.sh, submit_paper2.sh
-""""""""""""""""""""""""""""""""""""""""""""""""
-
-Sometimes its good to collect all run-configurations into a single file. Execute on cluster with:
+Unlike ``chemcomp_pipeline``, ``chemcomp_pipeline_slurm`` is build for execution on a slurm cluster.
+This run script takes identical arguments, but adds an additional flag for a file with slurm arguments:
 
 .. code-block :: bash
 
-   ./submit_paper1.sh
+   chemcomp_pipeline_slurm [-h/--help][-c/--config_file][-d/--delete][-j/--job_file][-o/overwrite][-s/--slurm_file]
+
+* ``-s`` specifies the path to the slurm file.
+
+Explanations about the slurm file can be found :ref:`here <slurm.yaml>`.
 
 
 The chemcomp directory
@@ -150,7 +153,7 @@ The code is structured in four main modules:
 Other directories
 """""""""""""""""
 
-The paths for ``output``,``zip_output``,``config`` and ``jobs`` can be adjusted in ``chemcomp/chemcomp/helpers/__init__.py``
+The paths for ``output``, ``zip_output``, ``config`` and ``jobs`` can be adjusted in ``chemcomp/chemcomp/helpers/__init__.py``
 
 +----------------+---------------------+--------------------------------------------------------+
 | Path           | Variable            | Use of path                                            |
@@ -165,4 +168,4 @@ The paths for ``output``,``zip_output``,``config`` and ``jobs`` can be adjusted 
 +----------------+---------------------+--------------------------------------------------------+
 
 The complete set of parameters in the config file is explained :ref:`here <config.yaml>`.
-Explanations of the job file can be found here: :ref:`here <Job.yaml>`.
+Explanations of the job file can be found :ref:`here <Job.yaml>`.
